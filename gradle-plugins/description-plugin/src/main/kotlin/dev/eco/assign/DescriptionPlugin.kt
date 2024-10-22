@@ -11,12 +11,13 @@ class DescriptionPlugin : Plugin<Project> {
                 val sourceFiles = countSourceFiles(project)
                 val classFiles = countClassFiles(project)
                 val gitInfo = getGitInfo(project)
-
+                println("=========================")
                 println("Application Description:")
                 println("Number of source files: $sourceFiles")
                 println("Number of class files: $classFiles")
                 println("Latest commit: ${gitInfo.first}")
                 println("Author of latest commit: ${gitInfo.second}")
+                println("=========================")
             }
         }
     }
